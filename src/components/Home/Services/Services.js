@@ -1,21 +1,36 @@
 import React from "react";
-import fluoride from "../../../images/Flouride.png";
-import cavity from "../../../images/Cavity.png";
-import whitening from "../../../images/whitening.png";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
-
+import apartment from "../../../images/service/apartment.png";
+import ecoHouse from "../../../images/service/eco-house.png";
+import electricity from "../../../images/service/electricity.png";
+import lightBulb from "../../../images/service/light-bulb.png";
+import onOffButton from "../../../images/service/on-off-button.png";
+import plug from "../../../images/service/plug.png";
+import power from "../../../images/service/power.png";
 const serviceData = [
   {
-    name: "Fluoride Treatment",
-    img: fluoride,
+    name: "Electrical",
+    img: apartment,
   },
   {
-    name: "Cavity Filling",
-    img: cavity,
+    name: "Security Systems",
+    img: ecoHouse,
   },
   {
-    name: "Teeth Whitening",
-    img: whitening,
+    name: "Air Conditioning",
+    img: electricity,
+  },
+  {
+    name: "Heating",
+    img: lightBulb,
+  },
+  {
+    name: "Trouble Shooting",
+    img: onOffButton,
+  },
+  {
+    name: "Panels Changes",
+    img: power,
   },
 ];
 

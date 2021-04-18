@@ -1,16 +1,19 @@
 .header-container {
   height: 800px;
   position: relative;
-  background-image: url("../../../images/ChairBg2.png");
+  background-image: url("../../../images/electrician-bg2.jpg");
   background-size: cover;
+
+  min-height: 100%;
+  box-shadow: inset 0 0 0 2000px rgba(139, 60, 106, 0.3);
 }
 .header-container::after {
-  height: 700px;
+  height: 800px;
   content: " ";
   position: absolute;
   top: 0;
   width: 30%;
   right: 0;
-  background-color: #3a4256;
+  background-color: #e54f4b;
   z-index: -50;
 }
