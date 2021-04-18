@@ -1,5 +1,5 @@
 .contact {
-  background-image: url(../../../images/loginBg\ copy.png);
+  background-image: url(../../../images/Welcome.jpg);
   position: relative;
   z-index: 1;
 }
@@ -9,7 +9,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgb(12, 11, 27);
+  background: rgba(163, 87, 131, 0.767);
   opacity: 0.9;
   z-index: -1;
 }

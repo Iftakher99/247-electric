@@ -12,7 +12,7 @@ const Electricians = () => {
   return (
     <section className='doctors'>
       <div className='container'>
-        <h5 className='text-center  text-primary mb-5'>Our Doctors</h5>
+        <h5 className='text-center  text-primary mb-5'>Our Electricians</h5>
         <div className='row'>
           {electrician.map((doctor) => (
             <Electrician key={doctor._id} doctor={doctor} />
