@@ -34,7 +34,7 @@ const Navbar = () => {
             </li>
             <li class='nav-item'>
               <a class='nav-link mx-5 text-light' href='#'>
-                Dental Services
+                Our Services
               </a>
             </li>
             <li class='nav-item '>

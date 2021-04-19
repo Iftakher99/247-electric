@@ -1,0 +1,9 @@
+#not-found {
+  background: url(https://media.giphy.com/media/iFIoS8BiwhilmjhLuH/giphy.gif)
+    center / cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#not-found h1 {
+  margin-top: 40px;
+}
