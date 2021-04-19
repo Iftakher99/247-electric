@@ -1,11 +1,43 @@
 .btn-brand {
-  background-image: linear-gradient(75deg, #e54f4b, #ec670f);
-  border-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    #e6b11f,
+    #e43603,
+    #fa7199,
+    #e85a19
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+
   text-transform: uppercase;
+  width: 180px;
+
   font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.btn-brand:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.btn-brand:focus {
+  outline: none;
 }
 .text-brand {
-  color: #1cc7c1;
+  color: #c5282d;
 }
 
 /* calendar design */
@@ -35,7 +67,7 @@
   color: #eaeaea;
 }
 .react-calendar__tile--active {
-  background-image: linear-gradient(75deg, #19d3ae, #0fcfec);
+  background-image: linear-gradient(75deg, #ff4d4d, #d11212);
   border-radius: 5px;
   color: #ffffff;
 }
