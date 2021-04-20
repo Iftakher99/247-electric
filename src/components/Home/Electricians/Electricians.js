@@ -2,19 +2,19 @@ import { faVestPatches } from "@fortawesome/free-solid-svg-icons";
 import React, { useEffect, useState } from "react";
 import Electrician from "../Electrician/Electrician";
 const Electricians = () => {
-  const [electrician, setElectrician] = useState([]);
+  const [electricians, setElectricians] = useState([]);
   useEffect(() => {
-    fetch("https://localhost:5000/electrician")
+    fetch("http://localhost:5000/electrician")
       .then((res) => res.json())
-      .then((data) => setElectrician(data));
+      .then((data) => setElectricians(data));
   }, []);
 
   return (
-    <section className='electrician'>
+    <section className='electricians'>
       <div className='container'>
         <h5 className='text-center  text-primary mb-5'>Our Electricians</h5>
         <div className='row'>
-          {electrician.map((electrician) => (
+          {electricians.map((electrician) => (
             <Electrician key={electrician._id} electrician={electrician} />
           ))}
         </div>

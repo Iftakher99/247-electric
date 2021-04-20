@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Sidebar from "../DashBoard/Sidebar/Sidebar";
+import Electrician from "../Home/Electrician/Electrician";
 
 const AddElectrician = () => {
   const [info, setInfo] = useState({});
@@ -42,7 +43,7 @@ const AddElectrician = () => {
         className='col-md-10 p-4 pr-5'
         style={{ position: "absolute", right: 0, backgroundColor: "#F4FDFB" }}
       >
-        <h5 className='text-brand'>Add a Doctor</h5>
+        <h5 className='text-brand'>Add a Electrician</h5>
         <form onSubmit={handleSubmit}>
           <div className='form-group'>
             <label htmlFor='exampleInputEmail1'>Email address</label>

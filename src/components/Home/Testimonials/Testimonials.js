@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Testimonial from "../Testimonial/Testimonial";
 import "./Testimonials.css";
 
@@ -29,6 +29,13 @@ const testimonialData = [
 ];
 
 const Testimonials = () => {
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:5000/review")
+      .then((res) => res.json())
+      .then((data) => setReviews(data));
+  }, []);
+
   return (
     <section className='testimonials my-5 py-5'>
       <div className='container'>
@@ -39,8 +46,8 @@ const Testimonials = () => {
           </h1>
         </div>
         <div className='card-deck row mt-5'>
-          {testimonialData.map((testimonial) => (
-            <Testimonial testimonial={testimonial} key={testimonial.name} />
+          {reviews.map((review) => (
+            <Testimonial key={review._id} review={review} />
           ))}
         </div>
       </div>

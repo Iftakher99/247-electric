@@ -1,10 +1,11 @@
 import React, { useContext, useEffect } from "react";
-import { userContext } from "../../../App";
+import { UserContext } from "../../../App";
+
 import AdminDashboard from "../Admin/AdminDashboard/AdminDashboard";
 import OrderListCard from "../OrderListCard/OrderListCard";
 
 const OrderList = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(userContext);
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
   useEffect(() => {
     fetch("http://localhost:5000/review")

@@ -1,6 +1,8 @@
 import React from "react";
 import BlogPost from "../BlogPost/BlogPost";
-import wilson from "../../../images/wilson.png";
+import wilson from "../../../images/team3.jpg";
+import aliza from "../../../images/aliza.png";
+import wilson2 from "../../../images/wilson.png";
 import "./Blogs.css";
 
 const blogData = [
@@ -8,25 +10,25 @@ const blogData = [
     title: "Check the experienced a electrician for you",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ",
-    author: "Tom",
+    author: "Obaidul Kader",
     authorImg: wilson,
-    date: "23 April 2019",
+    date: "3 Feb 2021",
   },
   {
     title: "Lorem ipsum dolor sit amet consectetur adipisicing elit. ",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ",
-    author: "Dr. Sinthia",
-    authorImg: wilson,
-    date: "23 April 2019",
+    author: "Sheikh Hasina",
+    authorImg: aliza,
+    date: "2 April 2021",
   },
   {
     title: "Expedita quos minus repudiandae laborum quis!",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, placeat totam laborum maiores, esse assumenda porro error natus sit ipsam.        ",
-    author: "Dr. Cudi",
-    authorImg: wilson,
-    date: "23 April 2019",
+    author: "Khaleda Zia",
+    authorImg: wilson2,
+    date: "23 May 2021",
   },
 ];
 

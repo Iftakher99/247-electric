@@ -1,17 +1,32 @@
 import React from "react";
+import Review from "../../DashBoard/Review/Review";
 
-const Testimonial = (props) => {
-  const { quote, name, from, img } = props.testimonial;
+const Testimonial = ({ review }) => {
+  console.log(review.image.img);
   return (
     <div className='card shadow-sm col-md-4 d-flex justify-content-center'>
       <div className='card-body'>
-        <p className='card-text text-center'>{quote}</p>
+        <p className='card-text text-center'>{review.description}</p>
       </div>
       <div className='card-footer d-flex  align-items-center'>
-        <img className='mx-3' src={img} alt='' width='60' />
+        {review.image ? (
+          <img
+            style={{ height: "200px" }}
+            src={`data:image/png;base64,${review.image.img}`}
+            alt=''
+          />
+        ) : (
+          <img
+            style={{ height: "200px" }}
+            className='img-fluid mb-3'
+            src={`https://localhost:5000/${review.img}`}
+            alt=''
+          />
+        )}
+
         <div>
-          <h6 className='text-primary'>{name}</h6>
-          <p className='m-0'>{from}</p>
+          <h6 className='text-primary'>{review.name}</h6>
+          <p className='m-0'>{review.company}</p>
         </div>
       </div>
     </div>

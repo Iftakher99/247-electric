@@ -11,6 +11,7 @@ import AdminDashboard from "./components/DashBoard/Admin/AdminDashboard/AdminDas
 import MainDashboard from "./components/DashBoard/MainDashboard/MainDashboard";
 import AddElectrician from "./components/AddElectrician/AddElectrician";
 import Review from "./components/DashBoard/Review/Review";
+import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute";
 
 export const UserContext = createContext();
 function App() {
@@ -20,32 +21,33 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/'>
-            <Home></Home>
+            <Home />
           </Route>
-          <Route path='/appointment'>
-            <Appointment></Appointment>
-          </Route>
-          <Route path='/dashboard/appointment'>
+          <PrivateRoute path='/appointment'>
+            <Appointment />
+          </PrivateRoute>
+          <PrivateRoute path='/dashboard/appointment'>
             <Dashboard />
-          </Route>
-          <Route path='/dashboard/allClients'>
-            <AllClients></AllClients>
-          </Route>
-          <Route path='/dashboard'>
+          </PrivateRoute>
+          <PrivateRoute path='/dashboard/allClients'>
+            <AllClients />
+          </PrivateRoute>
+          <PrivateRoute path='/dashboard'>
             <MainDashboard />
-          </Route>
+          </PrivateRoute>
           <Route path='/login'>
-            <Login></Login>
+            <Login />
           </Route>
-          <Route path='/admin'>
+          <PrivateRoute path='/admin'>
             <AdminDashboard />
-          </Route>
-          <Route path='/addAElectrician'>
+          </PrivateRoute>
+          <PrivateRoute path='/addAElectrician'>
             <AddElectrician />
-          </Route>
-          <Route path='/review'>
+          </PrivateRoute>
+
+          <PrivateRoute path='/review'>
             <Review />
-          </Route>
+          </PrivateRoute>
           <Route path='*'>
             <NotFound />
           </Route>

@@ -32,18 +32,18 @@ const Sidebar = () => {
         </li>
         <div>
           <li>
-            <Link to='/allPatients' className='text-white'>
+            <Link to='/dashboard/appointments' className='text-white'>
               <FontAwesomeIcon icon={faCalendar} /> <span>Appointments</span>
             </Link>
           </li>
           <li>
-            <Link to='/clients' className='text-white'>
+            <Link to='/dashboard/allClients' className='text-white'>
               <FontAwesomeIcon icon={faUsers} /> <span>Clients</span>
             </Link>
           </li>
           <li></li>
           <li>
-            <Link to='/addElectrician' className='text-white'>
+            <Link to='/addAElectrician' className='text-white'>
               <FontAwesomeIcon icon={faUserPlus} /> <span>Add Electrician</span>
             </Link>
           </li>
