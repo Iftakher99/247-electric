@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav class='navbar navbar-expand-lg navbar-light '>
       <div class='container-fluid'>
-        <Link class='navbar-brand' href='#'>
+        <Link class='navbar-brand' to='/home'>
           <img src={logo} alt='' />
         </Link>
         <button
@@ -22,35 +22,39 @@ const Navbar = () => {
         <div class='collapse navbar-collapse' id='navbarNav'>
           <ul class='navbar-nav  text-light float-end ms-auto'>
             <li class='nav-item'>
-              <a class='nav-link mx-5 text-light ' aria-current='page' href='#'>
+              <Link
+                class='nav-link mx-5 text-light '
+                aria-current='page'
+                href='#'
+              >
                 Home
-              </a>
+              </Link>
             </li>
 
             <li class='nav-item'>
-              <a class='nav-link mx-5 text-light' href='#'>
+              <Link class='nav-link mx-5 text-light' href='#'>
                 About
-              </a>
+              </Link>
             </li>
             <li class='nav-item'>
-              <a class='nav-link mx-5 text-light' href='#'>
+              <Link class='nav-link mx-5 text-light' href='#'>
                 Our Services
-              </a>
+              </Link>
             </li>
             <li class='nav-item '>
-              <a class='nav-link mx-5 text-light' href='#'>
+              <Link class='nav-link mx-5 text-light' href='#'>
                 Reviews{" "}
-              </a>
+              </Link>
             </li>
             <li class='nav-item'>
-              <a class='nav-link mx-5 text-light' href='#'>
+              <Link class='nav-link mx-5 text-light' href='#'>
                 Blogs
-              </a>
+              </Link>
             </li>
             <li class='nav-item'>
-              <a class='nav-link mx-5 text-light' href='#'>
+              <Link class='nav-link mx-5 text-light' href='#'>
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
