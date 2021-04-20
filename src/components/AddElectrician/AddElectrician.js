@@ -24,7 +24,7 @@ const AddElectrician = () => {
     formData.append("name", info.name);
     formData.append("email", info.email);
 
-    fetch("http://localhost:5000/addAElectrician", {
+    fetch("https://electric-247.herokuapp.com/addAElectrician", {
       method: "POST",
       body: formData,
     })

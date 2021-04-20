@@ -4,7 +4,7 @@ import Electrician from "../Electrician/Electrician";
 const Electricians = () => {
   const [electricians, setElectricians] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/electrician")
+    fetch("https://electric-247.herokuapp.com/electrician")
       .then((res) => res.json())
       .then((data) => setElectricians(data));
   }, []);

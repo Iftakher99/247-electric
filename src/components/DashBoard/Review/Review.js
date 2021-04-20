@@ -20,7 +20,7 @@ const Review = () => {
   // Summit
   const handleReviewSubmit = (event) => {
     // database ta data load
-    fetch("http://localhost:5000/reviewForm", {
+    fetch("https://electric-247.herokuapp.com/reviewForm", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -23,7 +23,7 @@ const AdminDashboard = () => {
 
   // handle Submit
   const handleSubmit = (e) => {
-    fetch("http://localhost:5000/loginAdmin", {
+    fetch("https://electric-247.herokuapp.com/loginAdmin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
