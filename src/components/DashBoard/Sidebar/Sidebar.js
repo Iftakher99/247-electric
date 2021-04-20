@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,8 +12,21 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import { UserContext } from "../../../App";
 
 const Sidebar = () => {
+  const [loggedInUser, setloggedInUser] = useContext(UserContext);
+  const [isElectrician, setIsElectrician] = useState();
+  useEffect(() => {
+    fetch("https://electric-247.herokuapp.com/isElectrician", {
+      method: "POST",
+      headers: { "Content-type": "application.json" },
+      body: JSON.stringify({ email: loggedInUser.email }),
+    })
+      .then((res) => res.json())
+      .then((data) => setIsElectrician);
+  }, []);
+  console.log(loggedInUser.email);
   return (
     <div
       className='sidebar d-flex flex-column justify-content-between col-md-2 py-5 px-4'
@@ -30,6 +43,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faHome} /> <span>Home</span>
           </Link>
         </li>
+        {/* {isElectrician&& } */}
         <div>
           <li>
             <Link to='/dashboard/appointments' className='text-white'>

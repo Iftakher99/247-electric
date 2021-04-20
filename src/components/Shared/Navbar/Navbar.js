@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../images/logo.png";
+import Dashboard from "../../DashBoard/Dashboard/Dashboard";
 const Navbar = () => {
   return (
     <nav class='navbar navbar-expand-lg navbar-light '>
@@ -32,27 +33,31 @@ const Navbar = () => {
             </li>
 
             <li class='nav-item'>
-              <Link class='nav-link mx-5 text-light' href='#'>
-                About
+              <Link
+                to='/dashboard/allClients'
+                class='nav-link mx-5 text-light'
+                href='#'
+              >
+                Clients
               </Link>
             </li>
             <li class='nav-item'>
-              <Link class='nav-link mx-5 text-light' href='#'>
-                Our Services
+              <Link to='/dashboard' class='nav-link mx-5 text-light' href='#'>
+                Dashboard
               </Link>
             </li>
             <li class='nav-item '>
-              <Link class='nav-link mx-5 text-light' href='#'>
-                Reviews{" "}
+              <Link to='/admin' class='nav-link mx-5 text-light' href='#'>
+                Admin{" "}
               </Link>
             </li>
             <li class='nav-item'>
-              <Link class='nav-link mx-5 text-light' href='#'>
+              <Link to='blogs' class='nav-link mx-5 text-light' href='#'>
                 Blogs
               </Link>
             </li>
             <li class='nav-item'>
-              <Link class='nav-link mx-5 text-light' href='#'>
+              <Link to='contactUs' class='nav-link mx-5 text-light' href='#'>
                 Contact Us
               </Link>
             </li>

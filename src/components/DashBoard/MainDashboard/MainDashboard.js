@@ -26,7 +26,7 @@ const dashboardFakeData = [
 ];
 
 const MainDashboard = () => {
-  const [allPatients, setAppointments] = useState([]);
+  const [allClients, setallClients] = useState([]);
 
   document.title = "Dashboard";
   return (
@@ -40,11 +40,7 @@ const MainDashboard = () => {
         </h4>
         <div className='row'>
           {dashboardFakeData.map((data) => (
-            <DashboardCard
-              key={data.id}
-              data={data}
-              allPatients={allPatients}
-            />
+            <DashboardCard key={data.id} data={data} allClients={allClients} />
           ))}
         </div>
       </div>

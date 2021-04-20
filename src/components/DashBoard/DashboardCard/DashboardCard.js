@@ -1,6 +1,6 @@
 import React from "react";
 
-const DashboardCard = ({ data, allPatients }) => {
+const DashboardCard = ({ data, allClients }) => {
   console.log(data);
   return (
     <div className=' col-md-3'>
@@ -9,7 +9,7 @@ const DashboardCard = ({ data, allPatients }) => {
       >
         <div className='d-flex justify-content-center '>
           <div className='card-body'>
-            <h4 className='card-title '>{allPatients.length}</h4>
+            <h4 className='card-title '>{allClients.length}</h4>
             <p className='card-text'>{data.title}</p>
           </div>
         </div>
