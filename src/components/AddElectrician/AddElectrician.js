@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Sidebar from "../DashBoard/Sidebar/Sidebar";
 
 const AddElectrician = () => {
   const [info, setInfo] = useState({});
@@ -22,7 +23,7 @@ const AddElectrician = () => {
     formData.append("name", info.name);
     formData.append("email", info.email);
 
-    fetch("http://localhost:5000/addADoctor", {
+    fetch("http://localhost:5000/addAElectrician", {
       method: "POST",
       body: formData,
     })

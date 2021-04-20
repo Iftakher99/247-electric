@@ -7,6 +7,10 @@ import Appointment from "./components/Appointment/Appointment/Appointment";
 import Dashboard from "./components/DashBoard/Dashboard/Dashboard";
 import AllClients from "./components/AllClients/AllClients";
 import Login from "./components/Login/Login/Login";
+import AdminDashboard from "./components/DashBoard/Admin/AdminDashboard/AdminDashboard";
+import MainDashboard from "./components/DashBoard/MainDashboard/MainDashboard";
+import AddElectrician from "./components/AddElectrician/AddElectrician";
+import Review from "./components/DashBoard/Review/Review";
 
 export const UserContext = createContext();
 function App() {
@@ -27,10 +31,21 @@ function App() {
           <Route path='/dashboard/allClients'>
             <AllClients></AllClients>
           </Route>
+          <Route path='/dashboard'>
+            <MainDashboard />
+          </Route>
           <Route path='/login'>
             <Login></Login>
           </Route>
-
+          <Route path='/admin'>
+            <AdminDashboard />
+          </Route>
+          <Route path='/addAElectrician'>
+            <AddElectrician />
+          </Route>
+          <Route path='/review'>
+            <Review />
+          </Route>
           <Route path='*'>
             <NotFound />
           </Route>

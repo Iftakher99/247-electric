@@ -3,21 +3,21 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt } from "@fortawesome/free-solid-svg-icons";
 import IImg from "../../../images/electrician.jpg";
+
 const Electrician = ({ electrician }) => {
   return (
     <div className='col-md-4 col-sm-6 mt-5 text-center'>
       {electrician.image ? (
         <img
           style={{ height: "200px" }}
-          // src={`data:image/png;base64,${doctor.image.img}`}
-          src={IImg}
+          src={`data:image/png;base64,${electrician.img}`}
           alt=''
         />
       ) : (
         <img
           style={{ height: "200px" }}
           className='img-fluid mb-3'
-          src={`https://salty-plateau-71286.herokuapp.com/${electrician.img}`}
+          src={`http://localhost:5000/${electrician.img}`}
           alt=''
         />
       )}

@@ -1,6 +1,8 @@
 import React from "react";
 import "./ServiceDetail.css";
+import { useHistory } from "react-router-dom";
 const ServiceDetail = ({ service }) => {
+  const history = useHistory();
   return (
     <div className='col-md-4 service-card text-center'>
       <div className='content d-flex justify-content-center '>
@@ -10,7 +12,9 @@ const ServiceDetail = ({ service }) => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam,
           quaerat?
         </p>
-        <button class='btn'>Read More</button>
+        <button onClick={() => history.push("/appointment")} class='btn'>
+          Read More
+        </button>
       </div>
     </div>
   );
